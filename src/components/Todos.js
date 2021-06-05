@@ -27,7 +27,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const Todos = (props) => {
   const [todo, setTodo] = useState("");
-  const [selectedDate, handleDateChange] = useState(new Date());
+  //const [selectedDate, handleDateChange] = useState(new Date());
 
   const handleChange = (e) => {
     setTodo(e.target.value);
