@@ -3,15 +3,15 @@ import { connect } from "react-redux";
 import { addTodos } from "../redux/reducer";
 import { GoPlus } from "react-icons/go";
 import { motion } from "framer-motion";
-import { MuiPickersUtilsProvider } from '@material-ui/pickers';
-import DateMomentUtils from '@date-io/moment';
-import {
-    // DatePicker,
-    // TimePicker,
-  DateTimePicker,
-  KeyboardDateTimePicker
-//   MuiPickersUtilsProvider,
-} from '@material-ui/pickers';
+// import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+// import DateMomentUtils from '@date-io/moment';
+// import {
+//     // DatePicker,
+//     // TimePicker,
+//   DateTimePicker,
+//   KeyboardDateTimePicker
+// //   MuiPickersUtilsProvider,
+// } from '@material-ui/pickers';
 
 const mapStateToProps = (state) => {
   return {
@@ -57,13 +57,8 @@ const Todos = (props) => {
         value={todo}
       />
     
-      <MuiPickersUtilsProvider utils={DateMomentUtils}>
-        {/* <DateTimePicker
-            variant="inline"
-            label="Basic example"
-            value={selectedDate}
-            onChange={handleDateChange}
-        /> */}
+      {/* <MuiPickersUtilsProvider utils={DateMomentUtils}>
+        
         <DateTimePicker
         autoOk
         ampm={false}
@@ -72,7 +67,7 @@ const Todos = (props) => {
         onChange={handleDateChange}
         label="24h clock"
       />
-      </MuiPickersUtilsProvider>
+      </MuiPickersUtilsProvider> */}
       
       <motion.button
         whileHover={{ scale: 1.1 }}
